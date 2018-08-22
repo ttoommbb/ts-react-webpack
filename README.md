@@ -123,3 +123,14 @@ server {
 ## the scaffold
 
 [steamer-react-redux-ts](https://github.com/YDJ-FE/steamer-react-redux-ts)
+
+##Trouble Shooting
+###React-hot-loader Not Working
+#####Observe: 
+- When change a file, no recompile in console, nor web changes, keep it running.
+- Create a new react app from create-react-app, run in other port(Add PORT=xxx before node), it reports space error.
+- Turned out it's file watching exceed limit.
+#####Solve:
+Increasing the amount of inotify watchers
+ https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers
+
