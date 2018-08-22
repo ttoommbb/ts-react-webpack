@@ -28,7 +28,7 @@ const basePlugins = [
 const devPlugins = [
     new HtmlWebpackPlugin({
         filename: 'index.html',
-        template: 'build/tpl/index.html',
+        template: 'build/tpl/dev-index.html',
         inject: true
     })
 ]
